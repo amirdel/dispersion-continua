@@ -1,0 +1,14 @@
+name: dispersion-continua
+channels:
+  - conda-forge
+dependencies:
+  - python=2.7
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-image
+  - ipython
+  - jupyter
+  - pandas
+  - pyamg
+  - cython
