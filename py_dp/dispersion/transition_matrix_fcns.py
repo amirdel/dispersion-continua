@@ -29,6 +29,7 @@ def count_matrix_with_lag(lag, nClass, v_array, freq_array, pointer_list,
     This is the count matrix in time using my bins (different classes for positive and negative velocities)
     """
     #first test the bins
+    nClass = int(nClass)
     v_pos_max = np.amax(v_array[v_array > 0.0])
     assert(v_pos_max < np.exp(v_pos_log_edges[-1]))
     transition_count_matrix = np.zeros((nClass,nClass))
